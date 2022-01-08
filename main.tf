@@ -1,5 +1,11 @@
-module "s3" {
-    #source = "<path-to-S3-folder>"
-    #bucket name should be unique
-    bucket_name = "ishan-test-bucket"       
+module "s3_bucket" {
+  source = "terraform-aws-modules/s3-bucket/aws"
+
+  bucket = "ishan-my-s3-bucket"
+  acl    = "private"
+
+  versioning = {
+    enabled = true
+  }
+
 }
