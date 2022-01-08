@@ -3,6 +3,7 @@ module "s3_bucket" {
 
   bucket = "ishan-my-s3-bucket"
   acl    = "private"
+  region = "ap-south-1"
 
   versioning = {
     enabled = true
