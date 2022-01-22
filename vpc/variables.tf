@@ -4,11 +4,11 @@ variable "vpc_name"{
 }
 
 variable "az"{
-	type = string
-	default = "ap-south-1a"
+	type = list(string)
+	default = ["ap-south-1a"]
 }
 
 variable "public_subnet"{
-	type = string
-	default = "10.34.1.0/24"
+	type = list(string)
+	default = ["10.34.1.0/24"]
 }
