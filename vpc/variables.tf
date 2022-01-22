@@ -3,7 +3,7 @@ variable "vpc_name"{
 	default = "terraform_demo_vpc"
 }
 
-variables "az"{
+variable "az"{
 	type = string
 	default = "ap-south-1a"
 }
