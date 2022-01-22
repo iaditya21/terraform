@@ -3,7 +3,7 @@ variable "vpc_name"{
 	default = "terraform_demo_vpc"
 }
 
-var "cidr"{
+variable "cidr"{
 	type = string
 	default = "10.34.0.0/16"
 }
