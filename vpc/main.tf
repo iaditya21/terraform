@@ -14,6 +14,8 @@ module "vpc"{
 
 
     enable_nat_gateway = true
+    single_nat_gateway = true
+    one_nat_gateway_per_az = false
     
     #The below creates separate routetables for private subnets
     #single_nat_gateway = false
